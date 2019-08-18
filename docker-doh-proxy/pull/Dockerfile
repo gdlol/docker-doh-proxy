@@ -1,3 +1,3 @@
 FROM scratch
 COPY ./ /root/
-ENTRYPOINT [""]
+ENTRYPOINT ["/root"]

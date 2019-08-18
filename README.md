@@ -39,3 +39,12 @@ or add the "dns" entry to the Docker daemon configuration file `/etc/docker/daem
 
 ### Configure Host DNS
 Optionally, configure the host to use the container's DNS service. Be sure to make a backup of the original settings.
+
+## Build
+```
+docker pull v2net/doh-proxy:build
+docker create --name doh-proxy-build v2net/doh-proxy:build
+docker cp doh-proxy-build:/root/ ./docker-doh-proxy/
+docker rm doh-proxy-build
+docker build --tag v2net/doh-proxy ./docker-doh-proxy/
+```

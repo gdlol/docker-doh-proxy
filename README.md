@@ -44,7 +44,7 @@ Optionally, configure the host to use the container's DNS service. Be sure to ma
 ```
 docker pull v2net/doh-proxy:build
 docker create --name doh-proxy-build v2net/doh-proxy:build
-docker cp doh-proxy-build:/root/ ./docker-doh-proxy/
+docker cp doh-proxy-build:/root/source/ ./docker-doh-proxy
 docker rm doh-proxy-build
 docker build --tag v2net/doh-proxy ./docker-doh-proxy/
 ```

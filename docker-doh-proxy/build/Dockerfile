@@ -1,4 +1,4 @@
 FROM python:3.6.9-alpine3.10
-COPY ./ /root/source/
+COPY ./ /root/
 ENTRYPOINT ["python"]
-CMD ["/root/source/build/main.py"]
+CMD ["/root/build/main.py"]

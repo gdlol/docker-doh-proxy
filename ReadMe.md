@@ -4,13 +4,6 @@ For more information, see [facebookexperimental/doh-proxy](https://github.com/fa
 
 ## Example
 
-### Configure the firewall to accept DNS queries from containers.
-
-If using UFW, run
-```
-ufw allow in on docker0 to any port 53
-```
-
 ### Start the container.
 
 ```
